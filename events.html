@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src = "js/angular.js"></script>
+</head>
+<body>
+ <div ng-app = "myapp" ng-init = "count = 0">
+       <button type="submit" ng-click= "count = count + 1">Click me</button>
+   <p >{{count}}</p>
+
+   <div  ng-controller = "counter">
+       <button ng-click="toggle()">toggle</button>
+       <p ng-hide="myvar">
+          click on the button to show/hide this text
+       </p>
+   </div>
+   </div>
+
+</body>
+<script>
+   var app = angular.module("myapp",[]);
+   app.controller("counter", function($scope){
+           $scope.myvar = true;
+           $scope.toggle = function(){
+             $scope.myvar  = !$scope.myvar;
+           };
+           });
+</script>
+</html>
