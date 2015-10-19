@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src = "js/angular.js"> </script>
+</head>
+<body>
+<form action="" novalidate ng-app = "myapp" ng-controller = "validatectrl" name = "myform" >
+    <p>Username :
+        <input type="text" name="user" id="" value="" ng-model="user" required/>
+        <span style = "color:red;" ng-show = "myform.user.$dirty && myform.user.$invalid">
+            <span ng-show = "myform.user.$error.required"> Username is required</span>
+        </span>
+    </p>
+    <p>Email:<br>
+      <input type="email" name="email" ng-model="email" required>
+      <span style="color:red" ng-show="myform.email.$dirty && myform.email.$invalid">
+          <span ng-show="myform.email.$error.required">Email is required.</span>
+          <span ng-show="myform.email.$error.email">Invalid email address.</span>
+      </span>
+    </p>
+    <p>
+      <input type="submit" ng-disabled="myform.user.$dirty && myform.user.$invalid || myform.email.$dirty && myform.email.$invalid">
+      <button type="submit" ng-disabled = "true || false"></button>
+    </p>
+
+
+</form>
+      <script>
+          var app = angular.module("myapp",[]);
+          app.controller("validatectrl", function($scope){
+                  $scope.user = "pulkit Pahwa";
+                  $scope.email = "pulkitpahwa11@gmail.com";
+                  });
+      </script>
+    
+</body>
+</html>
