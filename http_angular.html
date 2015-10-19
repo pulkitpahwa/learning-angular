@@ -10,7 +10,7 @@
    <div ng-app = "http_app">
        <div ng-controller = "http_controller" >
           <ul>
-              <li ng-repeat = "i in names">{{i.Name}}</li>
+              <li ng-repeat = "i in names">{{$index + 1}} :  {{i.Name}}</li>
           </ul>
        
        </div>
