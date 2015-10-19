@@ -7,10 +7,10 @@ app.controller("abccontroller", function($scope){
 app.controller("bcd", function($scope){
     $scope.name = [
      {name : "Pulkit Pahwa", age : 22},
-     {name : "Bipin Roy", age : 22},
-     {name : "Rahul Ranjan", age : 22},
-     {name : "Abhinav Kumar", age : 22},
-     {name : "Abhinav Kumar", age : 22},
-     {name : "Pratap", age : 22}
+     {name : "Bipin Roy", age : 21},
+     {name : "Rahul Ranjan", age : 23},
+     {name : "Abhinav Kumar", age : 20},
+     {name : "Abhinav Kumar", age : 21},
+     {name : "Pratap", age : 19}
     ];
 });

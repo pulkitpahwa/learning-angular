@@ -14,8 +14,9 @@
         </div>
 
         <div ng-controller = "bcd">
+            <input type="text" ng-model = "test" name="" id="" value="" placeholder = "Start entering to autofilter" />
             <ul>
-                <li ng-repeat = "i in name">{{i.name}}</li>
+                <li ng-repeat = "i in name | filter : test | orderBy : 'age'">{{ (i.name|uppercase) + " ,  " +  (i.name|lowercase) + ',     ' + (i.age - 5 ) }}</li>
             </ul>
         </div>
         
