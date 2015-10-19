@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <script type="text/javascript" charset="utf-8" src = "js/angular.js"> </script>
+</head>
+<body>
+
+<!--demo of  loops and initialise in angular -->
+<div data-ng-app = "" data-ng-init = "names = ['Kunal Jain', 'Divya Jain', 'Sunil Ray', 'Deepk Kumar', 'Manish', 'Sahil Sharma', 'Pulkit Pahwa', 'Ummed Saini']"> 
+    <p>Hi, I am Pulkit Pahwa, and I work at Analytics Vidhya. Our team  :</p>
+    <ul>
+        <li data-ng-repeat = "x in names">{{x}}</li>
+    </ul>
+</div>
+<!!-- demo end --->
+</body>
+</html>
