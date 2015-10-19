@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <title></title>
      <script type="text/javascript" charset="utf-8" src = "js/angular.js"> </script>
+     <script>
+     
+     </script>
 </head>
 <body data-ng-app = "">
 <p> Angular is capable to compute the expreesions  : {{5 + 5}}</p>
+<p data-ng-init = "items = 30; cost = 40"> more examples of expressions :<br/> Price = {{items * cost}} </p>
+<p data-ng-init = "item = 40;cos = 50">Same can also be done like this : <span data-ng-bind="item*cos"></span></p>
+<p data-ng-init = "user = {'firstname' : 'pulkit', age : '22'}"> Demonstrating objects with expressions : <br/>
+Your name is<b> {{user.firstname}} </b> and  your age is {{user.age}} </p>
+
+
+
+
+
     
 </body>
 </html>
