@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src = "js/angular.js"></script>
+    <script>
+       var app = angular.module("myapp",[]);
+       app.controller("firstController",function($scope){
+               $scope.name = "Pulkit Pahwa"
+               $scope.username = "pulkitpahwa";
+       });
+    </script>
+</head>
+<body data-ng-app = "myapp">
+    <div data-ng-controller = "firstController">
+        Welcome : {{username}} . <br/>
+        Your name is {{name}}
+    </div>
+    
+</body>
+</html>
